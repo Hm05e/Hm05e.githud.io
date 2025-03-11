@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.M Accessory</title>
+    <meta name="description" content="Descripción de P.M Accessory para mejorar la búsqueda en internet">
+    <meta name="keywords" content="accesorios, tienda en línea, P.M Accessory">
+    <meta name="author" content="Heriberto Maldonado">
+    <meta name="msapplication-square70x70logo" content=".../icons8-sunglasses-external-flaticons-lineal-color-flat-icons-70.png">
+    <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-jewel-pulsar-color-16.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+        <a class="navbar-brand" href="portada.html">
+            <img src="carrusel/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            P.M Accessory
+        </a>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              
+                <li class="nav-item">
+                    <a class="nav-link" href="Acerca.html">Acerca</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Catalogo
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Anillos.html">Anillos</a>
+                        <a class="dropdown-item" href="Aretes.html">Aretes</a>
+                        <a class="dropdown-item" href="Charms.html">Charms</a>
+                        <a class="dropdown-item" href="Cadenas.html">Cadenas</a>
+                        <a class="dropdown-item" href="Pulseras.html">Pulsera</a>
+                        <a class="dropdown-item" href="Monederos.html">Monederos</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <form class="form-inline ml-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+            <!-- Interruptor para Modo Oscuro -->
+            <button id="dark-mode-toggle" class="btn btn-outline-secondary ml-3">Modo Oscuro</button>
+        </div>
+    </nav>
+
+
+    <div class="container text-center mt-5">
+        <h1>Bienvenido a P.M Accessory</h1>
+        <p>Tu tienda en línea para accesorios </p>
+        <p><em>Brillando juntos en cada momento</em></p>
+    </div>
+
+    <div class="container mt-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="max-width: 800px; margin: 0 auto;">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="carrusel/c1.png" alt="Primera imagen">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Accesorios en oferta</h5>
+                        <p>¡No te lo pierdas!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="carrusel/c2.png" alt="Segunda imagen">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Nuevas llegadas</h5>
+                        <p>Descubre nuestras últimas colecciones</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="carrusel/c3.png" alt="Tercera imagen">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Accesorios exclusivos</h5>
+                        <p>¡Sólo en P.M Accessory!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="carrusel/c4.png" alt="Cuarta imagen">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Descuentos especiales</h5>
+                        <p>Aprovecha nuestras ofertas</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="carrusel/c5.png" alt="Quinta imagen">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ediciones limitadas</h5>
+                        <p>Accesorios únicos para ti</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes contenedor/anilloss.png" alt="Anillos">
+                    <div class="card-body">
+                        <h5 class="card-title">Anillos</h5>
+                        <a href="Anillos.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes contenedor/aretess.png" alt="Aretes">
+                    <div class="card-body">
+                        <h5 class="card-title">Aretes</h5>
+                        <a href="Aretes.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes contenedor/charmss.png" alt="Charms">
+                    <div class="card-body">
+                        <h5 class="card-title">Charms</h5>
+                        <a href="Charms.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes contenedor/cadenass.png" alt="Cadenas">
+                    <div class="card-body">
+                        <h5 class="card-title">Cadenas</h5>
+                        <a href="Cadenas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes contenedor/monedeross.png" alt="Monederos">
+                    <div class="card-body">
+                        <h5 class="card-title">Monederos</h5>
+                        <a href="Monederos.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes contenedor/pulseraP.png" alt="Pulseras">
+                    <div class="card-body">
+                        <h5 class="card-title">Pulsera</h5>
+                        <a href="Pulseras.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>P.M Accessory</h4>
+                    <ul>
+                        <li><a href="Acerca.html">Acerca</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                        <li><a href="politicasyprivacidad.html">Políticas y Privacidad</a></li>
+                        <li><a href="enlaceinteres.html">Enlace de Interes</a></li>
+                        
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                       
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Tienda Online</h4>
+                    <ul>
+                        
+                        <li><a href="https://www.studiof.com.co/ropa">Mujeres</a></li>
+                        <li><a href="https://www.studiof.com.co/hombre">Hombres</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/tu_perfil" target="_blank" class="fab fa-facebook-f"></a>
+                        <a href="https://www.instagram.com/tu_perfil" target="_blank" class="fab fa-instagram"></a>
+                        <a href="https://www.twitter.com/tu_perfil" target="_blank" class="fab fa-twitter"></a>
+                    </div>
+                    <p>Teléfono: +1 (829) 859-7507</p>
+                    <p>Teléfono: +1 (829) 703-5969</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3">
+            © 2025 P.M Accessory
+        </div>
+    </footer>
+    
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+
+
+</body>

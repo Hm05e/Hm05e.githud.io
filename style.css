@@ -1,0 +1,213 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0c0c0c;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #e382ec, #e3e6eb);
+    color: #fff;
+}
+
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link:focus {
+    color: #dfddd4 !important;
+    outline: none;
+}
+
+.carousel-inner p,
+.carousel-inner h5 {
+    color:aqua;
+}
+
+
+/* Tarjetas de productos */
+#product-container .card {
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#product-container .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    min-height: 250px;
+    object-fit: cover;
+}
+
+.card{
+    margin-bottom: 1rem;
+}
+.card-title {
+    font-family: 'Roboto', sans-serif;
+    color: #09151b;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+ .card .btn{
+    display: flex; /* Permite aplicar márgenes automáticos */
+    margin: 0 auto; /* Centra el botón */
+    text-align: center;
+    justify-content: center;
+} 
+.card-text {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+    color: #bbbbbb;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    width: 50px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    color: #bbbbbb;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+/* Botón de carrito */
+#cart-count {
+    background-color: #e91e63;
+    color: white;
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: relative;
+    top: -5px;
+    right: 5px;
+}
+
+.add-to-cart {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #004494;
+    color: #fff;
+}
+
+/* Modo Oscuro */
+.dark-mode {
+    background-color:  #333333;
+    color: #ffffff;
+}
+
+.dark-mode h1, .dark-mode h5, .dark-mode p, .dark-mode a {
+    color: #f8f9fa;
+}
+
+.dark-mode a:hover {
+    color: #ffcc00;
+}
+
+.dark-mode .card-title, .dark-mode .card-text {
+    color: #e6e6e6;
+}
+
+.dark-mode .footer p, .dark-mode .footer-col h4, .dark-mode .footer a {
+    color: #cccccc;
+}
+
+.dark-mode .btn {
+    background-color: #333333;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.dark-mode .btn:hover {
+    background-color: #444444;
+    color: #ffcc00;
+}
+.dark-mode .carousel-inner p,
+.carousel-inner h5 {
+    color:aqua;
+}
+
+.dark-mode .card p {
+    
+    color: #333333;
+}
+.dark-mode .card-title {
+    color: black;
+    font-weight: bold;
+}
+
+.dark-mode .dropdown-item  {
+    
+    color: #333333;
+}
+/* Responsive */
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
